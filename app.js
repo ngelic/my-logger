@@ -17,3 +17,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
+app.get('/', (req, res) => {
+    // This logs the person, then immediately sends them to a YouTube video
+    res.redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ'); 
+});
