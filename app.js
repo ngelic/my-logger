@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
+app.set('trust proxy', true);
 const PORT = 3000;
 
 app.use((req, res, next) => {
